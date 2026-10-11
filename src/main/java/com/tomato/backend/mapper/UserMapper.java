@@ -3,7 +3,9 @@ package com.tomato.backend.mapper;
 import com.tomato.backend.dto.request.UserRegisterRequest;
 import com.tomato.backend.dto.response.UserResponse;
 import com.tomato.backend.entity.User;
+import org.springframework.stereotype.Component;
 
+@Component
 public class UserMapper {
     public User toEntity(UserRegisterRequest request) {
         User user = new User();
